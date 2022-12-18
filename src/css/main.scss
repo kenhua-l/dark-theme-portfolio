@@ -1,0 +1,55 @@
+/* main css file which loads after bootstrap
+ * this file is to be changed as desired
+ */
+$neon-pink: #F25CA2;
+$medium-blue: #0433BF;
+$blue: #032CA6;
+$dark-blue: #021859;
+$light-blue: #0B9ED9;
+
+$black: #121212;
+$gold: #D99A25;
+$off-gold: #D9A05B;
+html {
+  font-size: 100%; // 1rem is 16px;
+}
+
+body {
+  font-size: 1rem;
+  background: $black;
+  font-family: "Roboto Slab";
+}
+
+.gold-bg {
+  background: $gold;
+}
+.off-gold-bg {
+  background: $off-gold;
+}
+
+.navbar-dark {
+  background: $blue;
+}
+.dropdown-menu {
+  padding: 0;
+  border-radius: 0;
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    &:hover, &:focus {
+      color: white;
+      background: $blue;
+    }
+  }
+}
+
+main {
+}
+
+footer {
+  background: $blue;
+  a {
+    color: white;
+  }
+}
+
+@import 'titlecards';
